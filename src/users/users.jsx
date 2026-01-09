@@ -1,7 +1,4 @@
-
-
 export const Users = ({ users }) => (
-
   <p className="panel-tabs has-text-weight-bold">
     <a
       data-cy="FilterAllUsers"
@@ -10,16 +7,11 @@ export const Users = ({ users }) => (
     >
       All
     </a>
-    
+
     {users.map(user => (
-      <a
-        key={user.id}
-        data-cy="FilterAllUsers"
-        href="#/"
-      >
+      <a key={user.id} data-cy="FilterAllUsers" href="#/">
         {user.name}
       </a>
     ))}
   </p>
 );
-
